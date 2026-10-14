@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f3ef" />
+    <title>Dice simulation</title>
+  </head>
+  <body>
+    <main id="app" aria-label="3D dice simulation">
+      <aside id="roll-status" aria-live="polite">
+        <span class="roll-status__label">Last roll</span>
+        <span id="roll-details">No dice rolled yet</span>
+        <span class="roll-status__label roll-history__label">Recent rolls</span>
+        <ol id="roll-history"></ol>
+      </aside>
+      <div id="control-overlay">
+        <div id="control-actions">
+          <button id="open-lid" class="control-button control-button--primary">
+            Open
+          </button>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
